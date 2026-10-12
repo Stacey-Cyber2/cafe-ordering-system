@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapal Labi Quality Coffee</title>
+    <link rel="stylesheet" href="stac.css">
+</head>
+<body>
+
+    <div class="main-wrapper" id="mainWrapper">
+        
+        <!-- --- 1. CLICKABLE PRODUCT MENU --- -->
+        <div class="card" id="menuCard">
+            <h2>Kapal Labi Cafe</h2>
+            <p class="subtitle">Choose what drink do you like</p>
+            
+            <div class="menu-grid">
+                <!-- 1 -->
+                <div class="menu-item selected" data-drink="Spanish Latte" data-price="140">
+                    <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c" alt="Spanish Latte" loading="lazy">
+                    <div class="menu-info">
+                        <h4>Spanish Latte</h4>
+                        <p>Espresso & condensed milk</p>
+                        <span class="price">₱140</span>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="menu-item" data-drink="Dark Mocha" data-price="150">
+                    <img src="https://images.unsplash.com/photo-1578314675249-a6910f80cc4e" alt="Dark Mocha" loading="lazy">
+                    <div class="menu-info">
+                        <h4>Dark Mocha</h4>
+                        <p>Rich chocolate & espresso</p>
+                        <span class="price">₱150</span>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="menu-item" data-drink="Matcha Green Tea" data-price="160">
+                    <img src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a" alt="Matcha" loading="lazy">
+                    <div class="menu-info">
+                        <h4>Matcha Green Tea</h4>
+                        <p>Ceremonial grade matcha</p>
+                        <span class="price">₱160</span>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="menu-item" data-drink="Americano" data-price="110">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd" alt="Americano" loading="lazy">
+                    <div class="menu-info">
+                        <h4>Americano</h4>
+                        <p>Espresso with hot water</p>
+                        <span class="price">₱110</span>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="menu-item" data-drink="Cappuccino" data-price="130">
+                    <img src="https://images.unsplash.com/photo-1534778101976-62847782c213" alt="Cappuccino" loading="lazy">
+                    <div class="menu-info">
+                        <h4>Cappuccino</h4>
+                        <p>Espresso, milk & thick foam</p>
+                        <span class="price">₱130</span>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="menu-item" data-drink="Cafe Latte" data-price="130">
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735" alt="Cafe Latte" loading="lazy">
+                    <div class="menu-info">
+                        <h4>Cafe Latte</h4>
+                        <p>Smooth espresso & steamed milk</p>
+                        <span class="price">₱130</span>
+                    </div>
+                </div>
+                <!-- 7 -->
+                <div class="menu-item" data-drink="Caramel Macchiato" data-price="150">
+                    <img src="https://images.unsplash.com/photo-1485808191679-5f86510681a2" alt="Caramel Macchiato" loading="lazy">
+                    <div class="menu-info">
+                        <h4>Caramel Macchiato</h4>
+                        <p>Vanilla, milk, espresso & caramel</p>
+                        <span class="price">₱150</span>
+                    </div>
+                </div>
+                <!-- 8 -->
+                <div class="menu-item" data-drink="Vanilla Sweet Cream Cold Brew" data-price="160">
+                    <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5" alt="Cold Brew" loading="lazy">
+                    <div class="menu-info">
+                        <h4>Vanilla Cold Brew</h4>
+                        <p>Slow-steeped with sweet cream</p>
+                        <span class="price">₱160</span>
+                    </div>
+                </div>
+                <!-- 9 -->
+                <div class="menu-item" data-drink="White Chocolate Mocha" data-price="155">
+                    <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d" alt="White Mocha" loading="lazy">
+                    <div class="menu-info">
+                        <h4>White Chocolate Mocha</h4>
+                        <p>White chocolate & espresso</p>
+                        <span class="price">₱155</span>
+                    </div>
+                </div>
+                <!-- 10 -->
+                <div class="menu-item" data-drink="Cafe Mocha" data-price="145">
+                    <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772" alt="Cafe Mocha" loading="lazy">
+                    <div class="menu-info">
+                        <h4>Cafe Mocha</h4>
+                        <p>Chocolate syrup & espresso</p>
+                        <span class="price">₱145</span>
+                    </div>
+                </div>
+                <!-- 11 -->
+                <div class="menu-item" data-drink="Flat White" data-price="135">
+                    <img src="https://images.unsplash.com/photo-1577968897966-3d4325b36b61" alt="Flat White" loading="lazy">
+                    <div class="menu-info">
+                        <h4>Flat White</h4>
+                        <p>Ristretto shots & microfoam</p>
+                        <span class="price">₱135</span>
+                    </div>
+                </div>
+                <!-- 12 -->
+                <div class="menu-item" data-drink="Dirty Chai Latte" data-price="165">
+                    <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3" alt="Dirty Chai" loading="lazy">
+                    <div class="menu-info">
+                        <h4>Dirty Chai Latte</h4>
+                        <p>Spiced tea, milk & espresso shot</p>
+                        <span class="price">₱165</span>
+                    </div>
+                </div>
+                <!-- 13 -->
+                <div class="menu-item" data-drink="Iced Toffee Nut Latte" data-price="170">
+                    <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc" alt="Toffee Nut" loading="lazy">
+                    <div class="menu-info">
+                        <h4>Toffee Nut Latte</h4>
+                        <p>Buttery toffee & roasted nuts</p>
+                        <span class="price">₱170</span>
+                    </div>
+                </div>
+                <!-- 14 -->
+                <div class="menu-item" data-drink="Sea Salt Caramel Latte" data-price="165">
+                    <img src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13" alt="Sea Salt Caramel" loading="lazy">
+                    <div class="menu-info">
+                        <h4>Sea Salt Caramel Latte</h4>
+                        <p>Sweet caramel with a touch of salt</p>
+                        <span class="price">₱165</span>
+                    </div>
+                </div>
+                <!-- 15 -->
+                <div class="menu-item" data-drink="Hazelnut Cold Brew" data-price="150">
+                    <img src="https://images.unsplash.com/photo-1518832553480-cd0e625ed3e6" alt="Hazelnut Cold Brew" loading="lazy">
+                    <div class="menu-info">
+                        <h4>Hazelnut Cold Brew</h4>
+                        <p>Cold brew infused with hazelnut</p>
+                        <span class="price">₱150</span>
+                    </div>
+                </div>
+                <!-- 16 -->
+                <div class="menu-item" data-drink="Double Shot Espresso" data-price="90">
+                    <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04" alt="Espresso" loading="lazy">
+                    <div class="menu-info">
+                        <h4>Double Espresso</h4>
+                        <p>Bold, rich concentrated shot</p>
+                        <span class="price">₱90</span>
+                    </div>
+                </div>
+                <!-- 17 -->
+                <div class="menu-item" data-drink="Affogato" data-price="175">
+                    <img src="https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9" alt="Affogato" loading="lazy">
+                    <div class="menu-info">
+                        <h4>Affogato</h4>
+                        <p>Espresso poured over vanilla ice cream</p>
+                        <span class="price">₱175</span>
+                    </div>
+                </div>
+                <!-- 18 -->
+                <div class="menu-item" data-drink="Vietnamese Iced Coffee" data-price="140">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd" alt="Vietnamese Coffee" loading="lazy">
+                    <div class="menu-info">
+                        <h4>Vietnamese Iced Coffee</h4>
+                        <p>Strong drip coffee & condensed milk</p>
+                        <span class="price">₱140</span>
+                    </div>
+                </div>
+                <!-- 19 -->
+                <div class="menu-item" data-drink="Brown Sugar Oat Milk Latte" data-price="180">
+                    <img src="https://images.unsplash.com/photo-1530373239216-42518e6b4063" alt="Oat Milk Latte" loading="lazy">
+                    <div class="menu-info">
+                        <h4>Brown Sugar Oat Latte</h4>
+                        <p>Espresso, oat milk & brown sugar</p>
+                        <span class="price">₱180</span>
+                    </div>
+                </div>
+                <!-- 20 -->
+                <div class="menu-item" data-drink="Classic Honey Citron Tea" data-price="130">
+                    <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3" alt="Citron Tea" loading="lazy">
+                    <div class="menu-info">
+                        <h4>Honey Citron Tea</h4>
+                        <p>Refreshing citrus & organic honey</p>
+                        <span class="price">₱130</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- --- 2. ORDER FORM & PAYMENT --- -->
+        <div class="card" id="orderCard">
+            <h2>Order Details</h2>
+            <p class="subtitle">Customize and complete payment</p>
+
+            <form id="mainOrderForm">   
+                <div class="input-group">
+                    <label for="drinkType">Selected Drink</label>
+                    <select id="drinkType" required>
+                        <option value="Spanish Latte" data-price="140">Spanish Latte (₱140)</option>
+                        <option value="Dark Mocha" data-price="150">Dark Mocha (₱150)</option>
+                        <option value="Matcha Green Tea" data-price="160">Matcha Green Tea (₱160)</option>
+                        <option value="Americano" data-price="110">Americano (₱110)</option>
+                        <option value="Cappuccino" data-price="130">Cappuccino (₱130)</option>
+                        <option value="Cafe Latte" data-price="130">Cafe Latte (₱130)</option>
+                        <option value="Caramel Macchiato" data-price="150">Caramel Macchiato (₱150)</option>
+                        <option value="Vanilla Sweet Cream Cold Brew" data-price="160">Vanilla Sweet Cream Cold Brew (₱160)</option>
+                        <option value="White Chocolate Mocha" data-price="155">White Chocolate Mocha (₱155)</option>
+                        <option value="Cafe Mocha" data-price="145">Cafe Mocha (₱145)</option>
+                        <option value="Flat White" data-price="135">Flat White (₱135)</option>
+                        <option value="Dirty Chai Latte" data-price="165">Dirty Chai Latte (₱165)</option>
+                        <option value="Iced Toffee Nut Latte" data-price="170">Iced Toffee Nut Latte (₱170)</option>
+                        <option value="Sea Salt Caramel Latte" data-price="165">Sea Salt Caramel Latte (₱165)</option>
+                        <option value="Hazelnut Cold Brew" data-price="150">Hazelnut Cold Brew (₱150)</option>
+                        <option value="Double Shot Espresso" data-price="90">Double Shot Espresso (₱90)</option>
+                        <option value="Affogato" data-price="175">Affogato (₱175)</option>
+                        <option value="Vietnamese Iced Coffee" data-price="140">Vietnamese Iced Coffee (₱140)</option>
+                        <option value="Brown Sugar Oat Milk Latte" data-price="180">Brown Sugar Oat Milk Latte (₱180)</option>
+                        <option value="Classic Honey Citron Tea" data-price="130">Classic Honey Citron Tea (₱130)</option>
+                    </select>
+                </div>
+
+                <div class="row">
+                    <div class="input-group">
+                        <label for="drinkSize">Size</label>
+                        <select id="drinkSize">
+                            <option value="Regular">Regular (12oz)</option>
+                            <option value="Large" data-add="30">Large (+₱30)</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="sugarLevel">Sugar</label>
+                        <select id="sugarLevel">
+                            <option value="100%">100% Normal</option>
+                            <option value="50%">50% Less Sugar</option>
+                            <option value="0%">0% No Sugar</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="iceLevel">Ice</label>
+                        <select id="iceLevel">
+                            <option value="Normal Ice">Normal Ice</option>
+                            <option value="Less Ice">Less Ice</option>
+                            <option value="More Ice">More Ice</option>
+                            <option value="No Ice">No Ice</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="TakeDine">Order Type</label>
+                        <select id="TakeDine">
+                            <option value="Dine in">Dine in</option>
+                            <option value="Take out">Take out</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" id="calculateBtn" class="btn">Proceed to Payment</button>
+            </form>
+
+            <!-- --- PAYMENT SECTION (HIDDEN BY DEFAULT) --- -->
+            <div id="paymentSection" class="payment-section">
+                <h3>Payment Method</h3>
+                <div class="payment-methods">
+                    <div class="pay-method-btn active" data-method="cash">Cash</div>
+                    <div class="pay-method-btn" data-method="gcash">Gcash / PayMaya</div>
+                </div>
+
+                <form id="paymentForm">
+                    <div id="cashDetails" class="payment-details active">
+                        <div class="input-group">
+                            <label for="cashAmount">Cash Tendered (Payment)</label>
+                            <input type="number" id="cashAmount" placeholder="e.g. 500" min="0">
+                        </div>
+                        <div class="summary-item" style="background: #27272a; padding: 10px; border-radius: 6px; margin-top: 5px;">
+                            <span>Change Due:</span>
+                            <span id="changeDisplay" style="color: #4ade80; font-weight: 700;">₱0.00</span>
+                        </div>
+                        <span id="cashError" style="font-size: 11px; color: #f87171; display: none; margin-top: 4px;">Insufficient cash tendered.</span>
+                    </div>
+
+                    <div id="ewalletDetails" class="payment-details">
+                        <div class="qr-container" style="text-align: center; margin-bottom: 15px; background: #27272a; padding: 15px; border-radius: 8px; border: 1px solid #3f3f46;">
+                            <p style="font-size: 13px; color: #ffffff; font-weight: 600; margin-bottom: 8px;">Scan to Pay via GCash / PayMaya</p>
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=KapalLabiCafe_GCash_Payment" alt="GCash QR Code" style="width: 140px; height: 140px; background: white; padding: 6px; border-radius: 6px; display: block; margin: 0 auto;">
+                            <p style="font-size: 12px; color: #4ade80; margin-top: 8px; font-weight: 500;">Kapal Labi Cafe &bull; ₱-Total</p>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="refNumber">Reference Number (13 Digits)</label>
+                            <input type="text" id="refNumber" placeholder="Enter 13-digit reference number" maxlength="13">
+                            <span id="refError" style="font-size: 11px; color: #f87171; display: none; margin-top: 3px;">Reference number must be exactly 13 digits.</span>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="walletNumber">Sender Mobile Number</label>
+                            <input type="text" id="walletNumber" placeholder="09XX XXX XXXX" maxlength="11">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn" style="margin-top: 15px;">Pay & Place Order</button>
+                    <button type="button" id="backToMenuBtn" class="btn btn-secondary" style="margin-top: 10px;">&larr; Back to Menu</button>
+                </form>
+            </div>
+            <!-- END of #paymentSection -->
+
+            <!-- --- SUCCESS & SUMMARY --- -->
+            <div id="successBanner" class="success-banner">
+                Payment successful! Your order is being prepared.
+            </div>
+
+            <div id="summaryCard" class="summary-card">
+                <h3>Order Summary</h3>
+                <div class="summary-item"><span>Drink:</span><span id="sumDrink">-</span></div>
+                <div class="summary-item"><span>Options:</span><span id="sumDetails">-</span></div>
+                <div class="summary-item" id="sumCashTenderedRow" style="display: none;"><span>Cash Tendered:</span><span id="sumCashTendered">₱0.00</span></div>
+                <div class="summary-item" id="sumChangeRow" style="display: none;"><span>Change:</span><span id="sumChange" style="color: #4ade80;">₱0.00</span></div>
+                <div class="summary-item" style="border-top: 1px solid #3f3f46; padding-top: 6px; margin-top: 6px;">
+                    <span>Total Paid:</span><span id="sumTotal" style="color: #4ade80;">₱0.00</span>
+                </div>
+                
+                <!-- PRINT RECEIPT BUTTON -->
+                <button type="button" id="printReceiptBtn" class="btn" style="margin-top: 15px; background: #3b82f6; color: #ffffff;">Print Receipt</button>
+                <button type="button" id="orderAgainBtn" class="btn" style="margin-top: 10px; background: #10b981; color: #ffffff;">Order Again</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="stac.js"></script>
+</body>
+</html>
